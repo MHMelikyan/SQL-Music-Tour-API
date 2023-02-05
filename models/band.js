@@ -1,8 +1,11 @@
-const{Sequelize, DataTypes, Model} = require('sequelize')
+const { Model, DataTypes}= require('sequelize');
+module.exports = (sequelize, DataTypes)=>{
+    class Band extends Model{
+        static associate(models){
+            
+        }
+    }
 
-
-//MODEL
-class Band  extends Model{}
 
 Band.init({
     band_id:{ 
@@ -33,7 +36,5 @@ Band.init({
     timestamps: false
 
 })
-
-
-//Export
-module.exports = Band
+return Band
+}
