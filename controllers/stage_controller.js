@@ -1,7 +1,7 @@
 // DEPENDENCIES
 const stages = require('express').Router()
 const db = require('../models')
-const { Stage } = db 
+const { Stage, Event } = db 
 const { Op } = require('sequelize')
 
 // FIND ALL STAGES
